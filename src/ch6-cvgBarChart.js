@@ -11,31 +11,31 @@ for (var i = 0; i < 20; i++) {
     dataset.push(newNumber);
 }
 
-var svg = d3.select("body")
-            .append("svg")
-            .attr("width", w)
-            .attr("height", h);
+var svg = d3.select('body')
+            .append('svg')
+            .attr('width', w)
+            .attr('height', h);
 
-var rects = svg.selectAll("rect")
+var rects = svg.selectAll('rect')
     .data(dataset)
     .enter()
-    .append("rect");
+    .append('rect');
 
-rects.attr("x", (d, i) => i * (w/(dataset.length))  )
-    .attr("y", d => h-d-1) // -1 to show something for empty bar
-    .attr("width", w/(dataset.length) - barPadding)
-    .attr("height", d => d+1)
-    .attr("fill", d => "rgb(50, 50, " + (d * 10) + ")")
+rects.attr('x', (d, i) => i * (w/(dataset.length))  )
+    .attr('y', d => h-d-1) // -1 to show something for empty bar
+    .attr('width', w/(dataset.length) - barPadding)
+    .attr('height', d => d+1)
+    .attr('fill', d => 'rgb(50, 50, ' + (d * 10) + ')')
 
 // labels
-svg.selectAll("text")
+svg.selectAll('text')
    .data(dataset)
    .enter()
-   .append("text")
+   .append('text')
    .text(d => d)
-   .attr("x", (d, i) => i * (w/(dataset.length)) + (w / dataset.length - barPadding) / 2)
-   .attr("y", d => h-d-1 + 14) // -1 to show something for empty bar
-   .attr("font-family", "sans-serif")
-   .attr("font-size", "11px")
-   .attr("fill", "white")
-   .attr("text-anchor", "middle") // center text
+   .attr('x', (d, i) => i * (w/(dataset.length)) + (w / dataset.length - barPadding) / 2)
+   .attr('y', d => h-d-1 + 14) // -1 to show something for empty bar
+   .attr('font-family', 'sans-serif')
+   .attr('font-size', '11px')
+   .attr('fill', 'white')
+   .attr('text-anchor', 'middle') // center text
