@@ -1,10 +1,10 @@
 {
-  "name": "rapid-prototyping",
+  "name": "d3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "config": {
-    "domain": "rapid-prototyping.surge.sh",
+    "domain": "d3.surge.sh",
     "styles": "scss/styles.scss bundle.css"
   },
   "scripts": {
