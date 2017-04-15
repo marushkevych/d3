@@ -6,3 +6,16 @@
   margin: 8px;
   padding: 0 8px 8px 8px;
 }
+
+div#tutorial-result {
+  width: 500px;
+  height: 500px;
+}
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override height later */
+    background-color: teal;
+    margin-right: 2px;
+}
