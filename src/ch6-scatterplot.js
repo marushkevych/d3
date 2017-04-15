@@ -3,7 +3,6 @@ var d3 = require('d3')
 //Width and height
 var w = 500;
 var h = 100;
-var barPadding = 2;
 
 var dataset = [
     [5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
