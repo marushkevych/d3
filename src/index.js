@@ -2,4 +2,4 @@
 // require('./ch6-cvgBarChart')
 // require('./ch7-scales')
 // require('./ch8-axes')
-require('./ch9-updates')
+require('./ch9-ordinalScales')
